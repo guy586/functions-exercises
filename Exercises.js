@@ -44,8 +44,21 @@ function myPower(x, n) {
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+  let notRpt = "";
+  for (let i = 0 ; i < str.length ; i++) {
+    let rpts = 0;
+    for (let j = 0 ; j < str.length ; j++) {
+      if (str[i] === str[j]) {
+        rpts++;
+      }
+    }
+    if (rpts === 1) {
+      notRpt = str[i];
+      break;
+    }
+  }
+  
+  return notRpt;
 }
 
 //Question 6 (Bonus)
