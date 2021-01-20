@@ -18,8 +18,16 @@ function allCombinations(str) {
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  let n = "";
+  n += str[0].toUpperCase();
+  for (let i = 1 ; i < str.length ; i++) {
+    if (str[i-1] === " ") {
+      n += str[i].toUpperCase();
+    } else {
+        n += str[i];
+    }
+  }
+  return n;
 }
 
 //Question 4
