@@ -32,8 +32,14 @@ function allCaps(str) {
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  let pwr = x;
+  if (n === 0) {
+    return 1;
+  }
+  for (let i = n ; i > 0 ; i--) {
+    pwr *= x;
+  }
+  return pwr;
 }
 
 //Question 5
