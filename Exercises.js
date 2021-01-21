@@ -39,8 +39,10 @@ function myPower(x, n) {
   let pwr = x;
   if (n === 0) {
     return 1;
+  } if (n === 1) {
+      return pwr;
   }
-  for (let i = n ; i > 0 ; i--) {
+  for (let i = n ; i > 1 ; i--) {
     pwr *= x;
   }
   return pwr;
